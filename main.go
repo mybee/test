@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"io"
+	"log"
 	"os"
 
 	"github.com/gin-gonic/gin"
@@ -15,7 +16,7 @@ import (
 )
 
 func main() {
-	fmt.Println("gin.Version: ", gin.Version)
+	log.Println("gin.Version: ", gin.Version)
 	if config.ServerConfig.Env != model.DevelopmentMode {
 		gin.SetMode(gin.ReleaseMode)
 		// Disable Console Color, you don't need console color when writing the logs to file.
