@@ -69,7 +69,7 @@ func PushToBaidu(c *gin.Context) {
 	}()
 	c.JSON(http.StatusOK, gin.H{
 		"errNo": model.ErrorCode.SUCCESS,
-		"msg":   "success, 哈哈哈哈",
+		"msg":   "sucsadfafacess, 哈哈哈哈",
 		"data":  gin.H{},
 	})
 }
